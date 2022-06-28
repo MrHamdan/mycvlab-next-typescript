@@ -1,0 +1,27 @@
+.appbar{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo_first_text{
+    font-size: 25px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.logo_second_text{
+    font-size: 25px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+.links{
+  color: var(--secondary-color);
+  border-bottom: 2px solid transparent;
+  border-radius: 0px;
+}
+
+.links:hover{
+  color: var(--tertiary-color);
+  border-bottom: 2px solid var(--tertiary-color);
+}
