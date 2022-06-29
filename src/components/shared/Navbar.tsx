@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <div>
             <AppBar position="static" elevation={0} className={Styles.appbar}>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
@@ -49,7 +49,7 @@ const Navbar = () => {
             sx={{
               // mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              // fontFamily: 'monospace',
               fontWeight: 700,
               // letterSpacing: '.3rem',
               color: 'inherit',
@@ -65,9 +65,9 @@ const Navbar = () => {
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              // mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              // fontFamily: 'monospace',
               fontWeight: 700,
               // letterSpacing: '.3rem',
               color: 'inherit',
@@ -78,7 +78,47 @@ const Navbar = () => {
             LAB.
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              // mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              // flexGrow: 1,
+              // fontFamily: 'monospace',
+              fontWeight: 700,
+              // letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+            className={Styles.logo_first_text}
+          >
+            MYCV
+          </Typography>
+
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              // mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              // flexGrow: 1,
+              // fontFamily: 'monospace',
+              fontWeight: 700,
+              // letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+            className={Styles.logo_second_text}
+          >
+            LAB.
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'right' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -114,8 +154,8 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+          {/* <Typography
             variant="h5"
             noWrap
             component="a"
@@ -132,7 +172,7 @@ const Navbar = () => {
             }}
           >
             LOGO
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'right' }}>
             {pages.map((page) => (
               <Button

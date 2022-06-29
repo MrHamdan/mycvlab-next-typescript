@@ -1,0 +1,332 @@
+.background_first {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0px;
+  border-radius: 0px;
+}
+
+.background_second {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 200px 0px;
+  border-radius: 0px;
+}
+
+.socials_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  width: 40px;
+  height: 240px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socials i:hover {
+  color: var(--tertiary-color);
+}
+
+.banner_text_div {
+  background-color: transparent;
+  text-align: left;
+}
+
+.banner_text_para_one {
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Radio Canada", sans-serif;
+  margin-bottom: 16px;
+}
+
+.banner_text_heading {
+  font-size: 49px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  line-height: 130%;
+  font-family: "Radio Canada", sans-serif;
+  margin-bottom: 16px;
+}
+
+.banner_text_heading_span {
+  font-size: 49px;
+  font-weight: 300;
+  color: var(--primary-color);
+  line-height: 130%;
+  font-family: "Radio Canada", sans-serif;
+}
+
+
+.banner_text_para_two{
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: "Radio Canada", sans-serif;
+    margin-bottom: 34px;
+}
+
+.google_sign_up_button {
+  border: 1px solid lightgray;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  text-transform: none;
+  background-color: #f0f0f0;
+  color: var(--paragraph-text-color);
+  margin-bottom: 24px;
+}
+
+.google_sign_up_button:hover {
+    background-color: #117EB8;
+    color: var(--text-secondary-color);
+}
+
+.linkedin_sign_up_button {
+  border: 1px solid lightgray;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  text-transform: none;
+  background-color: #f0f0f0;
+  color: var(--paragraph-text-color);
+  margin-bottom: 24px;
+}
+
+
+.linkedin_sign_up_button:hover{
+    background-color: #0077B5;
+    color: var(--text-secondary-color);
+}
+
+
+.sign_up_text{
+  font-family: "Radio Canada", sans-serif;
+}
+
+.google_sign_up_text{
+  font-family: "Radio Canada", sans-serif;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.linkedin_sign_up_text{
+  font-family: "Radio Canada", sans-serif;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.banner_text_email{
+    color: var(--tertiary-color);
+    font-family: "Radio Canada", sans-serif;
+}
+
+
+.explore {
+  font-family: "Radio Canada", sans-serif;
+  letter-spacing: 1px;
+  background: none;
+  color: var(--text-secondary-color);
+  position: relative;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 190px;
+  font-size: 14px;
+  z-index: 2;
+  transition: 0.01s 0.23s ease-out all;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.explore:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  background: var(--primary-background-color);
+  z-index: -1;
+  transition: 0.3s ease-in all;
+}
+
+.explore:after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: 5%;
+  height: 90%;
+  width: 5%;
+  background: var(--text-secondary-color);
+  z-index: -1;
+  transition: 0.4s 0.02s ease-in all;
+}
+
+.explore:hover {
+  cursor: pointer;
+  color: transparent;
+}
+
+.explore:hover:before {
+  left: 100%;
+  width: 25%;
+}
+
+.explore:hover:after {
+  left: 100%;
+  width: 70%;
+}
+
+.explore:hover .icon-right.after:after {
+  left: -80px;
+  color: var(--text-secondary-color);
+  transition: 0.2s 0.2s ease all;
+}
+
+.explore:hover .icon-right.after:before {
+  left: -104px;
+  top: 14px;
+  opacity: 0.2;
+  color: var(--text-secondary-color);
+}
+
+.icon-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-right:after {
+  font-family: "FontAwesome";
+  content: "\2192";
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+  transform: translate3D(0, -50%, 0);
+}
+
+.icon-right.after:after {
+  left: -250px;
+  color: black;
+  transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color;
+}
+
+.icon-right.after:before {
+  content: "Explore";
+  position: absolute;
+  left: -230px;
+  top: 14px;
+  opacity: 0;
+  transition: 0.2s ease-in all;
+}
+
+.signature {
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: 100;
+  bottom: 10px;
+  left: 0;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100vw;
+  text-align: center;
+  color: var(--text-secondary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width:280px) and (max-width:768px) {
+  .banner_text_heading {
+    font-size: 26px;
+  }
+  .banner_text_heading_span {
+    font-size: 26px;
+  }
+  .banner_text_para_one {
+    font-size: 12px;
+  }
+  .banner_text_para_two{
+    font-size: 14px;
+  }
+  .banner_text_email{
+    font-size: 12px;
+  }
+  .explore {
+    font-size: 14px;
+  }
+  .explore:before {
+    width: 50%;
+  }
+  .explore:after {
+    width: 5%;
+  }
+  .explore:hover .icon-right.after:after {
+    left: -80px;
+    color: var(--text-secondary-color);
+    transition: 0.2s 0.2s ease all;
+  }
+  .explore:hover .icon-right.after:before {
+    left: -104px;
+    top: 14px;
+    opacity: 0.2;
+    color: var(--text-secondary-color);
+  }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+  .banner_text_heading {
+    font-size: 30px;
+  }
+  .banner_text_heading_span {
+    font-size: 30px;
+  }
+  .banner_text_para_one {
+    font-size: 14px;
+  }
+  .banner_text_para_two{
+    font-size: 16px;
+  }
+  .banner_text_email{
+    font-size: 14px;
+  }
+  .explore {
+    font-size: 16px;
+  }
+  .explore:before {
+    width: 50%;
+  }
+  .explore:after {
+    width: 5%;
+  }
+  .explore:hover .icon-right.after:after {
+    left: -80px;
+    color: var(--text-secondary-color);
+    transition: 0.2s 0.2s ease all;
+  }
+  .explore:hover .icon-right.after:before {
+    left: -104px;
+    top: 14px;
+    opacity: 0.2;
+    color: var(--text-secondary-color);
+  }
+}
