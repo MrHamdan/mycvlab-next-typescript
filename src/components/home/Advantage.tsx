@@ -147,8 +147,8 @@ const Advantage = () => {
                           Pro Resume Templates
                         </Typography>
                         <Typography className={Styles.advantage_card_para}>
-                          Whatever resume template you're looking for, we've got
-                          it! Whether it's a classic black-and-white template,
+                          Whatever resume template youre looking for, weve got
+                          it! Whether its a classic black-and-white template,
                           or something a bit more
                         </Typography>
                       </Item>

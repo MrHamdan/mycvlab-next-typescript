@@ -64,7 +64,7 @@ const Buildcv = () => {
                             Pick a Template
                           </Typography>
                           <Typography className={Styles.build_card_para}>
-                            Don't sabotage your job search before it has even
+                            Dont sabotage your job search before it has even
                             begun. Choose from our ATS-friendly, hand-crafted
                             resume templates
                           </Typography>
@@ -89,7 +89,7 @@ const Buildcv = () => {
                             Customize Your Layout
                           </Typography>
                           <Typography className={Styles.build_card_para}>
-                            Don't sabotage your job search before it has even
+                            Dont sabotage your job search before it has even
                             begun. Choose from our ATS-friendly, hand-crafted
                             resume templates
                           </Typography>
@@ -114,7 +114,7 @@ const Buildcv = () => {
                             Fill in the Blanks
                           </Typography>
                           <Typography className={Styles.build_card_para}>
-                            Don't sabotage your job search before it has even
+                            Dont sabotage your job search before it has even
                             begun. Choose from our ATS-friendly, hand-crafted
                             resume templates
                           </Typography>
@@ -136,10 +136,10 @@ const Buildcv = () => {
                             </span>
                           </Typography>
                           <Typography className={Styles.build_card_heading}>
-                            Hit 'Download!'
+                            Hit Download!
                           </Typography>
                           <Typography className={Styles.build_card_para}>
-                            Don't sabotage your job search before it has even
+                            Dont sabotage your job search before it has even
                             begun. Choose from our ATS-friendly, hand-crafted
                             resume templates
                           </Typography>
