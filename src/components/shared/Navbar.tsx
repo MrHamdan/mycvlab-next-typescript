@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import Styles from '../../styles/Navbar.module.css';
+import Navbarstyles from '../../styles/Navbar.module.css';
 
 const pages = ['Home', 'Create CV', 'Cover Letter', 'Career Advice', 'Member Login', 'Register'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -37,7 +37,7 @@ const Navbar = () => {
   };
     return (
         <div>
-            <AppBar position="static" elevation={0} className={Styles.appbar}>
+            <AppBar position="static" elevation={0} className={Navbarstyles.appbar}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -55,7 +55,7 @@ const Navbar = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-            className={Styles.logo_first_text}
+            className={Navbarstyles.logo_first_text}
           >
             MYCV
           </Typography>
@@ -73,7 +73,7 @@ const Navbar = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-            className={Styles.logo_second_text}
+            className={Navbarstyles.logo_second_text}
           >
             LAB.
           </Typography>
@@ -93,7 +93,7 @@ const Navbar = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-            className={Styles.logo_first_text}
+            className={Navbarstyles.logo_first_text}
           >
             MYCV
           </Typography>
@@ -113,7 +113,7 @@ const Navbar = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
-            className={Styles.logo_second_text}
+            className={Navbarstyles.logo_second_text}
           >
             LAB.
           </Typography>
@@ -179,7 +179,7 @@ const Navbar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 // sx={{ my: 2, color: 'white', display: 'block' }}
-                className={Styles.links}
+                className={Navbarstyles.links}
               >
                 {page}
               </Button>
