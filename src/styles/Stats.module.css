@@ -1,0 +1,45 @@
+.stats_div{
+    background-color: var(--primary-color);
+    padding: 80px 40px;
+    border-radius: 8px;
+}
+
+.stats_icon{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.stats_text_div{
+    text-align: left;
+}
+
+
+.stats_div_text_icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_heading{
+    font-weight: 700;
+font-size: 25px;
+font-family: "Radio Canada", sans-serif;
+color: var(--secondary-color);
+}
+
+.stats_para{
+    font-size: 16px;
+font-family: "Radio Canada", sans-serif;
+font-weight: 400;
+margin-top:-10px;
+color: var(--secondary-color);
+}
+
+.stats_icon{
+    margin-top: 7px;
+}
+
+
+.stats_text_span{
+    color: var(--tertiary-color);
+}

@@ -1,0 +1,36 @@
+.checkout_text_heading{
+     font-family: "Radio Canada", sans-serif;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary-text-color);
+  position: relative;
+  margin-bottom: 16px;
+}
+
+
+.checkout_text_heading_dot {
+  color: var(--primary-color);
+}
+
+.checkout_text_heading::before {
+  content: "";
+  position: absolute;
+  left: 32%;
+  top: 42%;
+  height: 32px;
+  width: 45%;
+  background: var(--secondary-background-color);
+  z-index: -1;
+  transition: 0.3s ease-in all;
+}
+
+
+.checkout_text_para {
+  font-weight: 400;
+  font-size: 16px;
+  color: #656565;
+  font-family: "Radio Canada", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}

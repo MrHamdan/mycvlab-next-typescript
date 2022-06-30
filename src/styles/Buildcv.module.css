@@ -1,3 +1,7 @@
+.build_section{
+  padding: 60px 0px;
+}
+
 .build_div {
   background-color: transparent;
 }
@@ -15,24 +19,24 @@
 .build_text_heading::before {
   content: "";
   position: absolute;
-  left: 18%;
+  left: 26%;
   top: 42%;
   height: 32px;
-  width: 70%;
+  width: 55%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
 }
 
 .build_text_heading_dot {
-  color: var (--tertiary-color);
+  color: var(--tertiary-color);
 }
 
 .build_text_para {
   font-family: "Radio Canada", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 120%;
+  color: #656565;
 }
 
 .build_card_div {
@@ -87,13 +91,12 @@
 
 .build_section{
     position: relative;
-    margin-top: 40px;
 }
 
 .build_line{
     position: absolute;
-    top: 22%;
-    left: 0;
+    top: 28%;
+    left: 1%;
     width: 100%;
     z-index: -1;
 }

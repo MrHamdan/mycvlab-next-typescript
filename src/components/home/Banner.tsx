@@ -9,7 +9,7 @@ import { Button, Typography } from "@mui/material";
 import Image from "next/image";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
   ...theme.typography.body2,
   padding: theme.spacing(0),
   textAlign: "center",

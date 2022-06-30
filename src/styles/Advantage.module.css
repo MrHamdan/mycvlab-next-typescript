@@ -1,0 +1,76 @@
+.advantage_section {
+  padding: 104px 0px;
+}
+
+.advantage_text_heading {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary-text-color);
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.advantage_text_heading_dot {
+  color: var(--tertiary-color);
+}
+
+.advantage_text_heading::before {
+  content: "";
+  position: absolute;
+  left: 26%;
+  top: 42%;
+  height: 32px;
+  width: 55%;
+  background: var(--secondary-background-color);
+  z-index: -1;
+  transition: 0.3s ease-in all;
+}
+
+.advantage_card_div {
+  text-align: left;
+}
+
+.advantage_text_para {
+  font-weight: 400;
+  font-size: 16px;
+  color: #656565;
+  font-family: "Radio Canada", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.advantage_card_heading {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Radio Canada", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.advantage_card_para {
+  font-size: 16px;
+  font-family: "Radio Canada", sans-serif;
+  color: #656565;
+}
+
+.advantage_card_para_span {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Radio Canada", sans-serif;
+  color: var(--primary-text-color);
+}
+
+
+.advantage_button{
+    background-color: var(--tertiary-color) !important;
+  color: var(--text-secondary-color);
+  width: 175px;
+  height: 56px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+    font-family: "Radio Canada", sans-serif;
+    margin-top: 40px;
+}
