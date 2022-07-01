@@ -20,7 +20,7 @@ const Buildcv = () => {
   return (
     <div>
       <Box className={Styles.build_section}>
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={12} lg={12} xl={12}>
@@ -39,7 +39,7 @@ const Buildcv = () => {
                     <Box className={Styles.build_line}>
                       <Image
                         src="/assets/images/line.png"
-                        width="1090px"
+                        width="787px"
                         height="2px"
                         alt="line"
                       />

@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Stats = () => {
   return (
     <div>
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box className={Styles.stats_div}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>

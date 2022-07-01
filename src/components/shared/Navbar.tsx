@@ -42,7 +42,7 @@ const Navbar = () => {
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-            variant="h6"
+            
             noWrap
             component="a"
             href="/"
@@ -60,7 +60,7 @@ const Navbar = () => {
             MYCV
           </Typography>
           <Typography
-            variant="h6"
+            
             noWrap
             component="a"
             href="/"

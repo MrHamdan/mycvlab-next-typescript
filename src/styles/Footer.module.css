@@ -1,0 +1,55 @@
+.footer_section{
+      background-color: var(--tertiary-background-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.footer_logo_text_first{
+    font-size: 25px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.footer_logo_text_second{
+    font-size: 25px;
+  font-weight: 700;
+  color: var(--tertiary-color);
+}
+
+.footer_links{
+    font-weight: 400;
+font-size: 16px;
+line-height: 320%;
+font-family: "Radio Canada", sans-serif;
+color: var(--secondary-color);
+}
+
+.footer_links:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.footer_link_heading{
+  font-weight: 700;
+font-size: 25px;
+line-height: 130%;
+font-family: "Radio Canada", sans-serif;
+color: #3C414A;
+}
+
+.footer_social_icons i{
+  background-color: #3c414a;
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin-right: 18px;
+  font-size: 20px;
+}
+
+.footer_social_icons i:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}

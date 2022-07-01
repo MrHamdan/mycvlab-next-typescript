@@ -1,5 +1,8 @@
-.checkout_text_heading{
-     font-family: "Radio Canada", sans-serif;
+.checkout_section{
+  padding: 104px 0px;
+}
+.checkout_text_heading {
+  font-family: "Radio Canada", sans-serif;
   font-size: 49px;
   font-weight: 700;
   line-height: 130%;
@@ -7,7 +10,6 @@
   position: relative;
   margin-bottom: 16px;
 }
-
 
 .checkout_text_heading_dot {
   color: var(--primary-color);
@@ -25,7 +27,6 @@
   transition: 0.3s ease-in all;
 }
 
-
 .checkout_text_para {
   font-weight: 400;
   font-size: 16px;
@@ -33,4 +34,69 @@
   font-family: "Radio Canada", sans-serif;
   margin-top: 24px;
   margin-bottom: 40px;
+}
+
+.checkout_rating_text {
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 130%;
+  font-family: "Radio Canada", sans-serif;
+  color: var(--primary-text-color);
+  margin-bottom: 5px;
+}
+
+.checkout_review_div {
+  text-align: left;
+}
+
+.checkout_rating_para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: "Radio Canada", sans-serif;
+  color: black;
+  margin-top: 28px;
+}
+
+.checkout_rating_para_span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: "Radio Canada", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.checkout_review_button {
+  background-color: var(--primary-color);
+  color: var(--text-secondary-color);
+  width: 169px;
+  height: 40px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.checkout_hired_div {
+  text-align: left;
+}
+
+
+.checkout_hired_para{
+  font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+font-family: "Radio Canada", sans-serif;
+color: var(--primary-text-color);
+}
+
+.checkout_review_text_para{
+  font-weight: 400;
+font-size: 10px;
+line-height: 120%;
+font-family: "Radio Canada", sans-serif;
+color: #656565;
 }

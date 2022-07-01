@@ -1,4 +1,4 @@
-.build_section{
+.build_section {
   padding: 60px 0px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .build_card_div {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .build_image_design {
@@ -51,6 +51,7 @@
   border: 2px solid transparent;
   border-bottom: 6px solid transparent;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
 
 .build_image_design:hover {
@@ -89,14 +90,13 @@
   font-family: "Radio Canada", sans-serif;
 }
 
-.build_section{
-    position: relative;
+.build_section {
+  position: relative;
 }
 
-.build_line{
-    position: absolute;
-    top: 28%;
-    left: 1%;
-    width: 100%;
-    z-index: -1;
+.build_line {
+  position: absolute;
+  top: 28%;
+  width: 100%;
+  z-index: -1;
 }

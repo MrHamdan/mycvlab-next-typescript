@@ -18,7 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Advantage = () => {
   return (
     <Box className={Styles.advantage_section}>
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={12} lg={12} xl={12}>

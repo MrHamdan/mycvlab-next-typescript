@@ -3,7 +3,6 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import Navbar from "../shared/Navbar";
 import Styles from "../../styles/Banner.module.css";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";
@@ -20,7 +19,6 @@ const Item = styled(Paper)(({ theme }) => ({
 const Banner = () => {
   return (
     <div>
-      <Navbar />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           <Grid item xs={12} md={12} lg={5} xl={5}>

@@ -20,7 +20,7 @@ const Cvtemplate = () => {
   return (
     <div>
       <Box className={Styles.cv_template_background}>
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={12} lg={3} xl={3}>
@@ -45,7 +45,7 @@ const Cvtemplate = () => {
                   </Typography>
                 </Item>
               </Grid>
-              <Grid item xs={12} md={12} lg={9}>
+              <Grid item xs={12} md={12} lg={9} xl={9}>
                 <Item>xs=4</Item>
               </Grid>
             </Grid>
