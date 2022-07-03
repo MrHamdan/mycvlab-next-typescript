@@ -7,6 +7,8 @@ import { Container } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import Styles from "../../styles/Checkoutuser.module.css";
 import Image from "next/image";
+import Slider from "react-slick";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
@@ -14,7 +16,18 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
+  boxShadow: theme.shadows[0],
 }));
+
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+};
+
 
 const Checkoutuser = () => {
   return (
@@ -69,15 +82,228 @@ const Checkoutuser = () => {
               </Item>
             </Grid>
             <Grid item xs={12} md={12} lg={9} xl={9}>
-              <Item>Carousel</Item>
+              <Item>
+                <div>
+                  <Slider {...settings}>
+                    <div>
+                      <Box className={Styles.checkout_card}>
+                        <Box sx={{ flexGrow: 1 }}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={3}>
+                              <Item>
+                                <Image
+                                  src="/assets/images/userone.png"
+                                  width="64px"
+                                  height="64px"
+                                  alt="user image"
+                                />
+                              </Item>
+                            </Grid>
+                            <Grid item xs={9}>
+                              <Item className={Styles.checkout_texts}>
+                                <Image
+                                  src="/assets/images/ratingfive.png"
+                                  width="82.29px"
+                                  height="16px"
+                                  alt="rating image"
+                                />
+                                <Typography
+                                  className={Styles.checkout_colored_text}
+                                >
+                                  Paula Brown
+                                  <span
+                                    className={Styles.checkout_colored_span}
+                                  >
+                                    reviewed
+                                  </span>
+                                  MYCVLAB
+                                </Typography>
+                              </Item>
+                            </Grid>
+                            <Grid item xs={12}>
+                              <Item className={Styles.checkout_para}>
+                                <Typography
+                                  className={Styles.checkout_review_text_para}
+                                >
+                                  Catherine have a very good customer service
+                                  and very patient with customers and your
+                                  system is perfect and user friendly but i
+                                  personally have financial problems that is why
+                                  I couldnt keep up with my subscription
+                                </Typography>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        </Box>
+                      </Box>
+                    </div>
+                    <div>
+                      <Box className={Styles.checkout_card}>
+                        <Box sx={{ flexGrow: 1 }}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={3}>
+                              <Item>
+                                <Image
+                                  src="/assets/images/userone.png"
+                                  width="64px"
+                                  height="64px"
+                                  alt="user image"
+                                />
+                              </Item>
+                            </Grid>
+                            <Grid item xs={9}>
+                              <Item className={Styles.checkout_texts}>
+                                <Image
+                                  src="/assets/images/ratingfive.png"
+                                  width="82.29px"
+                                  height="16px"
+                                  alt="rating image"
+                                />
+                                <Typography
+                                  className={Styles.checkout_colored_text}
+                                >
+                                  Paula Brown
+                                  <span
+                                    className={Styles.checkout_colored_span}
+                                  >
+                                    reviewed
+                                  </span>
+                                  MYCVLAB
+                                </Typography>
+                              </Item>
+                            </Grid>
+                            <Grid item xs={12}>
+                              <Item className={Styles.checkout_para}>
+                                <Typography
+                                  className={Styles.checkout_review_text_para}
+                                >
+                                  Catherine have a very good customer service
+                                  and very patient with customers and your
+                                  system is perfect and user friendly but i
+                                  personally have financial problems that is why
+                                  I couldnt keep up with my subscription
+                                </Typography>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        </Box>
+                      </Box>
+                    </div>
+                    <div>
+                      <Box className={Styles.checkout_card}>
+                        <Box sx={{ flexGrow: 1 }}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={3}>
+                              <Item>
+                                <Image
+                                  src="/assets/images/userone.png"
+                                  width="64px"
+                                  height="64px"
+                                  alt="user image"
+                                />
+                              </Item>
+                            </Grid>
+                            <Grid item xs={9}>
+                              <Item className={Styles.checkout_texts}>
+                                <Image
+                                  src="/assets/images/ratingfive.png"
+                                  width="82.29px"
+                                  height="16px"
+                                  alt="rating image"
+                                />
+                                <Typography
+                                  className={Styles.checkout_colored_text}
+                                >
+                                  Paula Brown
+                                  <span
+                                    className={Styles.checkout_colored_span}
+                                  >
+                                    reviewed
+                                  </span>
+                                  MYCVLAB
+                                </Typography>
+                              </Item>
+                            </Grid>
+                            <Grid item xs={12}>
+                              <Item className={Styles.checkout_para}>
+                                <Typography
+                                  className={Styles.checkout_review_text_para}
+                                >
+                                  Catherine have a very good customer service
+                                  and very patient with customers and your
+                                  system is perfect and user friendly but i
+                                  personally have financial problems that is why
+                                  I couldnt keep up with my subscription
+                                </Typography>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        </Box>
+                      </Box>
+                    </div>
+                    <div>
+                      <Box className={Styles.checkout_card}>
+                        <Box sx={{ flexGrow: 1 }}>
+                          <Grid container spacing={2}>
+                            <Grid item xs={3}>
+                              <Item>
+                                <Image
+                                  src="/assets/images/userone.png"
+                                  width="64px"
+                                  height="64px"
+                                  alt="user image"
+                                />
+                              </Item>
+                            </Grid>
+                            <Grid item xs={9}>
+                              <Item className={Styles.checkout_texts}>
+                                <Image
+                                  src="/assets/images/ratingfive.png"
+                                  width="82.29px"
+                                  height="16px"
+                                  alt="rating image"
+                                />
+                                <Typography
+                                  className={Styles.checkout_colored_text}
+                                >
+                                  Paula Brown
+                                  <span
+                                    className={Styles.checkout_colored_span}
+                                  >
+                                    reviewed
+                                  </span>
+                                  MYCVLAB
+                                </Typography>
+                              </Item>
+                            </Grid>
+                            <Grid item xs={12}>
+                              <Item className={Styles.checkout_para}>
+                                <Typography
+                                  className={Styles.checkout_review_text_para}
+                                >
+                                  Catherine have a very good customer service
+                                  and very patient with customers and your
+                                  system is perfect and user friendly but i
+                                  personally have financial problems that is why
+                                  I couldnt keep up with my subscription
+                                </Typography>
+                              </Item>
+                            </Grid>
+                          </Grid>
+                        </Box>
+                      </Box>
+                    </div>
+                  </Slider>
+                </div>
+              </Item>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={12} lg={3} xl={3}>
               <Item>xs=8</Item>
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={12} md={12} lg={7} xl={7}>
               <Item>xs=8</Item>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={12} md={12} lg={2} xl={2}>
               <Item>xs=8</Item>
             </Grid>
             <Grid item xs={12} md={12} lg={3} xl={3}>

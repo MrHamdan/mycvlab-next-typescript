@@ -45,3 +45,25 @@
 font-size: 16px;
 line-height: 120%;
 }
+
+
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .cover_section {
+    padding: 104px 0px;
+  }
+
+  .cover_text_heading {
+    font-size: 18px;
+  }
+
+  .cover_text_heading_dot {
+    font-size: 13px;
+  }
+
+  .cover_button{
+    width: 100%;
+    height: 56px;
+  }
+
+}

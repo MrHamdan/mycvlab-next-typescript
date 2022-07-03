@@ -53,3 +53,26 @@ color: #3C414A;
   color: #fff;
   cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .footer_section {
+    padding: 50px 0px;
+  }
+  .footer_logo_text_first{
+    font-size: 20px;
+  }
+  .footer_logo_text_second{
+    font-size: 20px;
+  }
+  .footer_links{
+    font-size: 14px;
+  }
+  .footer_link_heading{
+    font-size: 20px;
+  }
+  .footer_social_icons i{
+    font-size: 14px;
+  }
+}

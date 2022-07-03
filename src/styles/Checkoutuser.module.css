@@ -67,7 +67,7 @@
 }
 
 .checkout_review_button {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: var(--text-secondary-color);
   width: 169px;
   height: 40px;
@@ -95,8 +95,93 @@ color: var(--primary-text-color);
 
 .checkout_review_text_para{
   font-weight: 400;
-font-size: 10px;
+font-size: 14px;
 line-height: 120%;
 font-family: "Radio Canada", sans-serif;
 color: #656565;
+}
+
+
+.checkout_card{
+  background-color: var(--card-background-color);
+  border: 0.5px solid var(--primary-color);
+  width: 352px;
+  height: 224px;
+  padding: 16px;
+}
+
+.checkout_card_div{
+  display: flex;
+  align-items: center;
+}
+
+.checkout_rating_text{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.checkout_card_heading{
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.checkout_colored_text{
+  color: var(--primary-color);
+  font-size: 10px;
+}
+
+.checkout_card_para{
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+  margin-top: 8px;
+}
+
+.checkout_colored_span{
+  color: #656565;
+  font-size: 10px;
+  margin: 0px 5px;
+}
+
+.checkout_texts{
+  text-align: left;
+  margin-top: 10px;
+}
+
+.checkout_para{
+  text-align: left;
+}
+
+.eee{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and  (max-width: 768px) {
+  .checkout_text_heading {
+    font-size: 20px;
+  }
+  .checkout_text_heading:before{
+    left: 20%;
+    top: 0%;
+    height: 100%;
+    width: 70%;
+  }
+  .checkout_text_para {
+    font-size: 12px;
+  }
+  .checkout_rating_text {
+    font-size: 32px;
+  }
+  .checkout_rating_para {
+    font-size: 12px;
+  }
+  .checkout_review_button {
+    width: 100%;
+  }
+  .checkout_card{
+    width: 100%;
+  }
 }

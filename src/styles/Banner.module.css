@@ -257,3 +257,22 @@
 .banner_image_box{
   width: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  .background_first{
+    padding: 104px 0px;
+  }
+  .background_second{
+    padding: 104px 0px;
+  }
+  .banner_text_heading{
+    font-size: 20px;
+  }
+  .banner_text_heading_span{
+    font-size: 20px;
+  }
+  .banner_text_para_two{
+    font-size: 14px;
+  }
+}

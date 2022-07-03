@@ -142,7 +142,7 @@ const Resume = () => {
                 />
                 <Typography className={Styles.resume_tag_div}>
                   <Typography component="span" className={Styles.resume_tags}>
-                    #COVER LATTER
+                    #COVERLATTER
                   </Typography>
                   <Typography component="span" className={Styles.resume_tags}>
                     #HELP

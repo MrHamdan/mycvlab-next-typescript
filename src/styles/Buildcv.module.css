@@ -19,10 +19,10 @@
 .build_text_heading::before {
   content: "";
   position: absolute;
-  left: 26%;
+  left: 19%;
   top: 42%;
   height: 32px;
-  width: 55%;
+  width: 70%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
@@ -99,4 +99,49 @@
   top: 28%;
   width: 100%;
   z-index: -1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .build_section {
+    padding: 60px 0px;
+  }
+
+  .build_text_heading {
+    font-size: 20px;
+  }
+
+  .build_text_heading::before {
+    left: 10%;
+    top: 0%;
+    height: 100%;
+    width: 90%;
+  }
+
+  .build_text_heading_dot {
+    font-size: 12px;
+  }
+
+  .build_text_para {
+    font-size: 14px;
+  }
+
+  .build_card_div {
+    padding: 10px 0px;
+  }
+
+  .build_number_design {
+    padding: 4px 8px;
+  }
+
+  .build_card_heading {
+    font-size: 16px;
+  }
+
+  .build_card_para {
+    font-size: 14px;
+  }
+  .build_line{
+    display: none;
+  }
 }

@@ -4,7 +4,7 @@
 
 .advantage_text_heading {
   font-family: "Radio Canada", sans-serif;
-  font-size: 35px;
+  font-size: 49px;
   font-weight: 700;
   line-height: 130%;
   color: var(--primary-text-color);
@@ -19,10 +19,10 @@
 .advantage_text_heading::before {
   content: "";
   position: absolute;
-  left: 26%;
+  left: 16%;
   top: 42%;
   height: 32px;
-  width: 55%;
+  width: 80%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
@@ -73,4 +73,48 @@
   border-radius: 3px;
     font-family: "Radio Canada", sans-serif;
     margin-top: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .advantage_section {
+    padding: 104px 0px;
+  }
+
+  .advantage_text_heading {
+    font-size: 18px;
+  }
+
+
+  .advantage_text_heading::before {
+    left: 10%;
+    top: 0%;
+    height: 100%;
+    width: 90%;
+  }
+
+  .advantage_card_div {
+    text-align: left;
+  }
+
+  .advantage_text_para {
+    font-size: 16px;
+  }
+
+  .advantage_card_heading {
+    font-size: 20px;
+  }
+
+  .advantage_card_para {
+    font-size: 16px;
+  }
+
+  .advantage_card_para_span {
+    font-size: 16px;
+  }
+
+  .advantage_button{
+    width: 175px;
+    height: 56px;
+  }
 }
