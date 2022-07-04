@@ -7,8 +7,21 @@ import { Container } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import Styles from "../../styles/Checkoutuser.module.css";
 import Image from "next/image";
-import Slider from "react-slick";
+import LinearProgress from "@mui/material/LinearProgress";
 
+
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+  // Client-side-only code
+  window.$ = window.jQuery = require("jquery");
+}
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
+
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
@@ -20,16 +33,41 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-};
+const Responsive = {
+  0: {
+    items: 1,
+  },
+  600: {
+    items: 3,
+  },
+  1000: {
+    items: 3,
+  }
+}
 
 
 const Checkoutuser = () => {
+  const [progress, setProgress] = React.useState(0);
+
+  React.useEffect(() => {
+    // const timer = setInterval(() => {
+    //   setProgress((oldProgress) => {
+    //     if (oldProgress === 100) {
+    //       return 0;
+    //     }
+    //     const diff = Math.random() * 10;
+    //     return Math.min(oldProgress + diff, 100);
+    //   });
+    // }, 500);
+
+    // return () => {
+    //   clearInterval(timer);
+    // };
+
+    setProgress(65);
+
+
+  }, []);
   return (
     <Box className={Styles.checkout_section}>
       <Container maxWidth="lg">
@@ -84,11 +122,20 @@ const Checkoutuser = () => {
             <Grid item xs={12} md={12} lg={9} xl={9}>
               <Item>
                 <div>
-                  <Slider {...settings}>
-                    <div>
+                  <OwlCarousel
+                    loop={true}
+                    margin={300}
+                    nav={true}
+                    autoplay={true}
+                    autoplayTimeout={5000}
+                    responsive={Responsive}
+                    className="owl-two owl-carousel"
+                    navText={[$(".am-prev"), $(".am-next")]}
+                  >
+                    <div className="item">
                       <Box className={Styles.checkout_card}>
                         <Box sx={{ flexGrow: 1 }}>
-                          <Grid container spacing={2}>
+                          <Grid container spacing={0}>
                             <Grid item xs={3}>
                               <Item>
                                 <Image
@@ -137,14 +184,14 @@ const Checkoutuser = () => {
                         </Box>
                       </Box>
                     </div>
-                    <div>
+                    <div className="item">
                       <Box className={Styles.checkout_card}>
                         <Box sx={{ flexGrow: 1 }}>
-                          <Grid container spacing={2}>
+                          <Grid container spacing={0}>
                             <Grid item xs={3}>
                               <Item>
                                 <Image
-                                  src="/assets/images/userone.png"
+                                  src="/assets/images/usertwo.png"
                                   width="64px"
                                   height="64px"
                                   alt="user image"
@@ -162,7 +209,7 @@ const Checkoutuser = () => {
                                 <Typography
                                   className={Styles.checkout_colored_text}
                                 >
-                                  Paula Brown
+                                  Thokozile Mshanga
                                   <span
                                     className={Styles.checkout_colored_span}
                                   >
@@ -189,14 +236,14 @@ const Checkoutuser = () => {
                         </Box>
                       </Box>
                     </div>
-                    <div>
+                    <div className="item">
                       <Box className={Styles.checkout_card}>
                         <Box sx={{ flexGrow: 1 }}>
-                          <Grid container spacing={2}>
+                          <Grid container spacing={0}>
                             <Grid item xs={3}>
                               <Item>
                                 <Image
-                                  src="/assets/images/userone.png"
+                                  src="/assets/images/userthree.png"
                                   width="64px"
                                   height="64px"
                                   alt="user image"
@@ -214,7 +261,7 @@ const Checkoutuser = () => {
                                 <Typography
                                   className={Styles.checkout_colored_text}
                                 >
-                                  Paula Brown
+                                  Pete Davis
                                   <span
                                     className={Styles.checkout_colored_span}
                                   >
@@ -241,14 +288,14 @@ const Checkoutuser = () => {
                         </Box>
                       </Box>
                     </div>
-                    <div>
+                    <div className="item">
                       <Box className={Styles.checkout_card}>
                         <Box sx={{ flexGrow: 1 }}>
-                          <Grid container spacing={2}>
+                          <Grid container spacing={0}>
                             <Grid item xs={3}>
                               <Item>
                                 <Image
-                                  src="/assets/images/userone.png"
+                                  src="/assets/images/userthree.png"
                                   width="64px"
                                   height="64px"
                                   alt="user image"
@@ -266,7 +313,7 @@ const Checkoutuser = () => {
                                 <Typography
                                   className={Styles.checkout_colored_text}
                                 >
-                                  Paula Brown
+                                  Pete Davis
                                   <span
                                     className={Styles.checkout_colored_span}
                                   >
@@ -293,7 +340,7 @@ const Checkoutuser = () => {
                         </Box>
                       </Box>
                     </div>
-                  </Slider>
+                  </OwlCarousel>
                 </div>
               </Item>
             </Grid>
@@ -301,10 +348,17 @@ const Checkoutuser = () => {
               <Item>xs=8</Item>
             </Grid>
             <Grid item xs={12} md={12} lg={7} xl={7}>
-              <Item>xs=8</Item>
+              <Item>
+                <LinearProgress variant="determinate" value={progress} />
+              </Item>
             </Grid>
             <Grid item xs={12} md={12} lg={2} xl={2}>
-              <Item>xs=8</Item>
+              <Item>
+                <Box className="slider_nav">
+                  <Button className="am-next">Next</Button>
+                  <Button className="am-prev">Previous</Button>
+                </Box>
+              </Item>
             </Grid>
             <Grid item xs={12} md={12} lg={3} xl={3}>
               <Item className={Styles.checkout_hired_div}>

@@ -7,9 +7,28 @@ import { Container } from "@mui/system";
 import Styles from "../../styles/Cvtemplate.module.css";
 import { Typography } from "@mui/material";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+
+
+declare global {
+  interface Window {
+    $: any; // 👈️ turn off type checking
+    jQuery: any; // 👈️ turn off type checking
+  }
+}
+
+
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+  // Client-side-only code
+  window.$ = window.jQuery = require("jquery");
+}
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
+
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
 
 
 
@@ -23,18 +42,19 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 
-const settings = {
-  className: "center",
-  centerMode: true,
-  infinite: true,
-  centerPadding: "0px",
-  slidesToShow: 5,
-  speed: 1000,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  slidesToScroll: 1,
-};
+
+
+const Responsive = {
+  0: {
+    items: 1,
+  },
+  600: {
+    items: 3,
+  },
+  1000: {
+    items: 5,
+  },
+}
 
 
 const Cvtemplate = () => {
@@ -66,65 +86,35 @@ const Cvtemplate = () => {
                   </Typography>
                 </Item>
               </Grid>
-              <Grid
-                item
-                xs={12}
-                md={12}
-                lg={9}
-                xl={9}
-              >
+              <Grid item xs={12} md={12} lg={9} xl={9}>
                 <Item>
                   <div>
-                    <Slider {...settings}>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-one.png"
-                          width="137px"
-                          height="184px"
-                          alt="cv image"
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-two.png"
-                          width="130px"
-                          height="184px"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-three.png"
-                          width="137px"
-                          height="184px"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-four.png"
-                          width="137px"
-                          height="184px"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-five.png"
-                          width="137px"
-                          height="184px"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src="/assets/images/cv-four.png"
-                          width="137px"
-                          height="184px"
-                          alt=""
-                        />
-                      </div>
-                    </Slider>
+                    <OwlCarousel
+                    center={true}
+                    loop={true}
+                    autoplay={true}
+                    autoplayTimeout={3000}
+                    autoplayHoverPause={true}
+                    responsive={Responsive}
+                    className="owl-one owl-carousel">
+                    
+                        <div>
+                          <img src="/assets/images/cv-one.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="/assets/images/cv-two.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="/assets/images/cv-three.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="/assets/images/cv-four.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="/assets/images/cv-five.png" alt="" />
+                        </div>
+                      
+                    </OwlCarousel>
                   </div>
                 </Item>
               </Grid>

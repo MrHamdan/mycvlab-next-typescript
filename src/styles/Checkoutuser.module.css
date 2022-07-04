@@ -127,7 +127,10 @@ color: #656565;
 
 .checkout_colored_text{
   color: var(--primary-color);
-  font-size: 10px;
+  font-weight: 700;
+font-size: 10px;
+line-height: 120%;
+font-family: "Radio Canada", sans-serif;
 }
 
 .checkout_card_para{
