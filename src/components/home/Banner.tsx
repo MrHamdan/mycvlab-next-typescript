@@ -59,7 +59,9 @@ const Banner = () => {
                       height="24px"
                       alt="google logo"
                     />{" "}
-                    <span className={Styles.google_sign_up_text}>Sign up with Google</span>
+                    <span className={Styles.google_sign_up_text}>
+                      Sign up with Google
+                    </span>
                   </Button>
                   <Button className={Styles.linkedin_sign_up_button}>
                     <Image
@@ -68,7 +70,9 @@ const Banner = () => {
                       height="24px"
                       alt="linkedin logo"
                     />{" "}
-                    <span className={Styles.linkedin_sign_up_text}>Sign up with LinkedIn</span>
+                    <span className={Styles.linkedin_sign_up_text}>
+                      Sign up with LinkedIn
+                    </span>
                   </Button>
                   <Typography className={Styles.sign_up_text}>
                     Or sign up with{" "}
@@ -91,7 +95,7 @@ const Banner = () => {
                 height="400px"
                 alt=""
               />
-              <Button className={Styles.explore}>
+              <Button className="explore">
                 Explore<span className="icon-right"></span>
                 <span className="icon-right after"></span>
               </Button>
