@@ -9,7 +9,6 @@ import Styles from "../../styles/Checkoutuser.module.css";
 import Image from "next/image";
 import LinearProgress from "@mui/material/LinearProgress";
 
-
 var $ = require("jquery");
 if (typeof window !== "undefined") {
   // Client-side-only code
@@ -32,7 +31,6 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: theme.shadows[0],
 }));
 
-
 const Responsive = {
   0: {
     items: 1,
@@ -48,7 +46,6 @@ const Responsive = {
     items: 3,
   },
 };
-
 
 const Checkoutuser = () => {
   const [progress, setProgress] = React.useState(0);
@@ -69,8 +66,6 @@ const Checkoutuser = () => {
     // };
 
     setProgress(65);
-
-
   }, []);
   return (
     <Box className={Styles.checkout_section}>
@@ -353,7 +348,11 @@ const Checkoutuser = () => {
             </Grid>
             <Grid item xs={12} md={12} lg={7} xl={8}>
               <Item>
-                <LinearProgress color="error" variant="determinate" value={progress} />
+                <LinearProgress
+                  color="error"
+                  variant="determinate"
+                  value={progress}
+                />
               </Item>
             </Grid>
             <Grid item xs={12} md={12} lg={2} xl={1}>

@@ -102,20 +102,65 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 280px) and (max-width: 768px) {
   .build_section {
     padding: 60px 0px;
   }
 
   .build_text_heading {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .build_text_heading::before {
-    left: 10%;
+    left: 13%;
     top: 0%;
     height: 100%;
-    width: 90%;
+    width: 80%;
+  }
+
+  .build_text_heading_dot {
+    font-size: 12px;
+  }
+
+  .build_text_para {
+    font-size: 14px;
+  }
+
+  .build_card_div {
+    padding: 10px 0px;
+  }
+
+  .build_number_design {
+    /* padding: 4px 8px; */
+  }
+
+  .build_card_heading {
+    font-size: 16px;
+  }
+
+  .build_card_para {
+    font-size: 14px;
+  }
+  .build_line{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+  .build_section {
+    padding: 60px 0px;
+  }
+
+  .build_text_heading {
+    font-size: 24px;
+  }
+
+  .build_text_heading::before {
+    left: 26%;
+    top: 0%;
+    height: 100%;
+    width: 55%;
   }
 
   .build_text_heading_dot {

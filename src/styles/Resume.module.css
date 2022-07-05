@@ -19,10 +19,10 @@
 .resume_text_heading::before {
   content: "";
   position: absolute;
-  left: 32%;
+  left: 28%;
   top: 42%;
   height: 32px;
-  width: 45%;
+  width: 55%;
   background: var(--secondary-background-color);
   z-index: -1;
   transition: 0.3s ease-in all;
@@ -111,8 +111,71 @@ font-family: "Radio Canada", sans-serif;
 
 
 
-@media screen and  (max-width: 768px) {
+@media screen and (min-width: 280px) and  (max-width: 768px) {
   .resume_section{
+    padding: 104px 0px;
+  }
+  .resume_text_heading {
+    font-family: "Radio Canada", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--primary-text-color);
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .resume_text_heading_dot {
+    color: var(--primary-color);
+  }
+  .resume_text_heading::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    height: 100%;
+    width: 70%;
+    background: var(--secondary-background-color);
+    z-index: -1;
+    transition: 0.3s ease-in all;
+  }
+  .resume_text_para {
+    font-weight: 400;
+    font-size: 16px;
+    color: #656565;
+    font-family: "Radio Canada", sans-serif;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .resume_tags {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 120%;
+    margin-left: 20px;
+    font-family: "Radio Canada", sans-serif;
+  }
+  .resume_card_div{
+      text-align: left;
+  }
+  .resume_card_heading{
+      font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: "Radio Canada", sans-serif;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+  }
+  .resume_card_para{
+      font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #474747;
+}
+}
+
+
+@media screen and (min-width: 768px) and  (max-width: 1536px) {
+.resume_section{
     padding: 104px 0px;
   }
   .resume_text_heading {

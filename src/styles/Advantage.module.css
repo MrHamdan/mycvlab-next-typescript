@@ -76,13 +76,13 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 280px) and (max-width: 768px) {
   .advantage_section {
     padding: 104px 0px;
   }
 
   .advantage_text_heading {
-    font-size: 18px;
+    font-size: 13px;
   }
 
 
@@ -91,6 +91,51 @@
     top: 0%;
     height: 100%;
     width: 90%;
+  }
+
+  .advantage_card_div {
+    text-align: left;
+  }
+
+  .advantage_text_para {
+    font-size: 16px;
+  }
+
+  .advantage_card_heading {
+    font-size: 20px;
+  }
+
+  .advantage_card_para {
+    font-size: 16px;
+  }
+
+  .advantage_card_para_span {
+    font-size: 16px;
+  }
+
+  .advantage_button{
+    width: 175px;
+    height: 56px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+.advantage_section {
+    padding: 104px 0px;
+  }
+
+  .advantage_text_heading {
+    font-size: 24px;
+  }
+
+
+  .advantage_text_heading::before {
+    left: 24%;
+    top: 0%;
+    height: 100%;
+    width: 60%;
   }
 
   .advantage_card_div {
