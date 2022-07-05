@@ -40,10 +40,14 @@ const Responsive = {
   600: {
     items: 3,
   },
+  768: {
+    margin: 30,
+    items: 2,
+  },
   1000: {
     items: 3,
-  }
-}
+  },
+};
 
 
 const Checkoutuser = () => {
