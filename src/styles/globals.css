@@ -55,11 +55,12 @@ a {
   bottom: 3%;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
   padding: 12px 28px;
   transition: 0.3s ease-in all;
   cursor: pointer;
+  font-family: "Radio Canada", sans-serif;
 }
 
 .owl-one .owl-item:not(.center) > div:hover {
@@ -70,7 +71,7 @@ a {
   display: flex;
   position: absolute;
   right: 0;
-  top: 107%;
+  top: 104%;
 }
 
 .fa-arrow-left-long {
@@ -94,4 +95,10 @@ a {
 
 .am-next{
   margin-left: 5px;
+}
+
+
+
+.css-hyum1k-MuiToolbar-root{
+  padding: 0px;
 }

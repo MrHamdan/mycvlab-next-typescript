@@ -345,18 +345,22 @@ const Checkoutuser = () => {
               </Item>
             </Grid>
             <Grid item xs={12} md={12} lg={3} xl={3}>
-              <Item>xs=8</Item>
+              <Item></Item>
             </Grid>
-            <Grid item xs={12} md={12} lg={7} xl={7}>
+            <Grid item xs={12} md={12} lg={7} xl={8}>
               <Item>
-                <LinearProgress variant="determinate" value={progress} />
+                <LinearProgress color="error" variant="determinate" value={progress} />
               </Item>
             </Grid>
-            <Grid item xs={12} md={12} lg={2} xl={2}>
+            <Grid item xs={12} md={12} lg={2} xl={1}>
               <Item>
                 <Box className="slider_nav">
-                  <Button className="am-next">Next</Button>
-                  <Button className="am-prev">Previous</Button>
+                  <Box className="am-prev">
+                    <i className="fa-solid fa-arrow-left-long"></i>
+                  </Box>
+                  <Box className="am-next">
+                    <i className="fa-solid fa-arrow-right-long"></i>
+                  </Box>
                 </Box>
               </Item>
             </Grid>

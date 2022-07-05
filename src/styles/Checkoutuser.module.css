@@ -177,6 +177,7 @@ font-family: "Radio Canada", sans-serif;
   }
   .checkout_rating_text {
     font-size: 32px;
+    text-align: center;
   }
   .checkout_rating_para {
     font-size: 12px;
@@ -186,5 +187,9 @@ font-family: "Radio Canada", sans-serif;
   }
   .checkout_card{
     width: 100%;
+    height: 100%;
+  }
+  .checkout_image_box{
+    text-align: center;
   }
 }

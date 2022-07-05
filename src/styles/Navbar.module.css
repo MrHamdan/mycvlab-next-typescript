@@ -25,10 +25,16 @@
 .links:hover{
   color: var(--tertiary-color);
   border-bottom: 2px solid var(--tertiary-color);
+  background-color: transparent;
 }
 
 
 .navbar_menu_color{
+  color: var(--primary-color);
+}
+
+
+.menu{
   color: var(--primary-color);
 }
 
